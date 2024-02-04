@@ -1,5 +1,7 @@
 package pl.edu.agh.hangman;
 
+import java.util.ArrayList;
+
 public class Hangman {
 
     public static final String[] HANGMANPICS = new String[]{
@@ -54,6 +56,9 @@ public class Hangman {
                     "========"
     };
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        ArrayList<String> wordList = WordList.wordList("src/main/resources/slowa.txt");
+        String word = WordGenerator.wordGenerator(wordList);
     }
 }
