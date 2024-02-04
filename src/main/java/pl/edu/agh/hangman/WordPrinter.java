@@ -9,14 +9,15 @@ public class WordPrinter {
     WordGenerator wordGenerator = new WordGenerator();
     ArrayList<String> wordList = new ArrayList<>();
     private String generatedWord = wordGenerator(wordList);
-    char[] gameWord = generatedWord.toCharArray();
+    private char[] gameWord = generatedWord.toCharArray();
+
+    private String masked = new String(new char[generatedWord.length()]).replace("\0", "_");
 
 
+//    for (int i = 0; i < gameWord.length(); i++){
+//        System.out.print(gameWord[i]);
+//    }
 
-
-    for (int i = 0; i < gameWord.length(); i++){
-        System.out.print(gameWord[i]);
-    }
 
 
 }
