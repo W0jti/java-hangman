@@ -79,5 +79,8 @@ public class Hangman {
         for (int i = 0; i < testArray.length; i++) {
             System.out.print(testArray[i]);
         }
+
+        String letter = CharInput.enterLetter();
+        
     }
 }
