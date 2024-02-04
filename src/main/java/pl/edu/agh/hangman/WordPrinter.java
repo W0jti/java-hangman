@@ -1,17 +1,21 @@
 package pl.edu.agh.hangman;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
+import static pl.edu.agh.hangman.WordGenerator.wordGenerator;
+
 public class WordPrinter {
-    WordGenerator word = new WordGenerator();
-    //private String generatedWord = word.generateWord();
+    WordGenerator wordGenerator = new WordGenerator();
+    ArrayList<String> wordList = new ArrayList<>();
+    private String generatedWord = wordGenerator(wordList);
     char[] gameWord = generatedWord.toCharArray();
 
-    Arrays.fill(gameWord, 0, gameWord.length, '_');
 
-    for (int i = 0; i < gameWord.length; i++){
-        System.out.print(gameWord[i]);
-    }
+
+//    for (int i = 0; i < gameWord.length(); i++){
+//        System.out.print(gameWord[i]);
+//    }
 
 
 }

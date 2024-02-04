@@ -65,19 +65,15 @@ public class Hangman {
         ArrayList<String> wordList = WordList.wordList("src/main/resources/slowa.txt");
         String word = WordGenerator.wordGenerator(wordList);
 
-        for (int i = 0; i < HANGMANPICS.length; i++) {
-            System.out.println(HANGMANPICS[i]);
-        }
-        String test = "Jacek";
-        char[] testArray = test.toCharArray();
+//        for (int i = 0; i < HANGMANPICS.length; i++) {
+//            System.out.println(HANGMANPICS[i]);
+//        }
+
+        char[] testArray = word.toCharArray();
 
         for (int i = 0; i < testArray.length; i++) {
             System.out.print(testArray[i]);
         }
 
-
-        for (int i = 0; i < testArray.length; i++) {
-            System.out.print(testArray[i]);
-        }
     }
 }
