@@ -13,9 +13,10 @@ public class WordPrinter {
 
 
 
-//    for (int i = 0; i < gameWord.length(); i++){
-//        System.out.print(gameWord[i]);
-//    }
+
+    for (int i = 0; i < gameWord.length(); i++){
+        System.out.print(gameWord[i]);
+    }
 
 
 }
